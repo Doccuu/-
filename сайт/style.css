@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #141111;
+
+}
+
+.main {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
+        url("Постеры/HELLDIVERS 2 full hd.png");
+    background-size: cover;
+    box-shadow: inset 0 -200px 60px 20px rgba(0, 0, 0, 0.575);
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav {
+
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.search {
+    margin-top: 10px;
+    justify-content: center;
+    width: 80vh;
+    border-radius: 30px;
+    background-color: #cfcfcf77;
+    border: none;
+    margin-right: 100px;
+    font-size: 25px;
+    outline: 0;
+    padding-left: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.search:focus {
+    border-radius: none;
+    background-color: #ffffff;
+}
+
+
+.logo {
+
+    max-width: 280px;
+    max-height: 90px;
+
+}
+
+.head {
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 30px;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.2s linear;
+
+}
+
+.head:hover {
+    color: #000000;
+    background: #ffffff;
+    transition: all 0.2s linear;
+
+}
+
+.katalog {
+    width: 170px;
+}
+
+.entry {
+    margin-top: 10px;
+    width: 100px;
+}
+
+
+.smallcard {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 30px;
+    transition: all 0.2s linear;
+}
+
+
+
+.imgcard {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.smallcard:hover {
+    border: 2px solid #F8B802;
+    background: #0000009c;
+
+}
+
+
+
+b {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px;
+
+}
+
+
+.downmain {
+    margin-top: 43.5vh;
+    display: flex;
+    justify-content: center;
+    gap: 60vh;
+
+}
+
+
+.verticalline {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 250px;
+
+
+}
+
+.switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+a {
+    align-items: flex-start
+}
+
+.threcard {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.promo {
+    display: flex;
+    gap: 100px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+a {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buy {
+    background-color: #F8B802;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.buy:hover{
+    background-color: #ffffff;
+    transition: .5s;
+}
+.buttoncategory {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    margin-bottom: 100px;
+
+}
+
+#new {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#new:hover {
+    color: #F8B802;
+    transition: all 0.2s linear;
+}
+
+#liders {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#liders:hover {
+    color: #F8B802;
+    transition: all 0.2s linear;
+}
+
+#pre-order {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#pre-order:hover {
+    color: #F8B802;
+    transition: all 0.2s linear;
+}
+
+#soulslike {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#soulslike:hover {
+    color: #F8B802;
+    transition: all 0.2s linear;
+}
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.categorycardup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.categorycarddawn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.bigcard {
+    width: 250px;
+    height: 440px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 30px;
+    transition: all 0.2s linear;
+    gap: 5px;
+
+
+}
+
+.bigcard:hover {
+    border: 2px solid #F8B802;
+    background: #0000009c;
+}
+
+.choise {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.ourchoise {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+
+c {
+    font-size: 35px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+.ourchoiseleft {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+
+
+}
+
+.ourchoiseright {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#eldn {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+ 
+}
+
+#eldenring{
+    transition: .5s;
+    cursor: pointer;
+}
+#eldenring:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+#mortlshell {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+#mortalshell{
+    transition: .5s;
+    cursor: pointer;
+}
+
+#mortalshell:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+#mortalshell324132412 {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+#mortalshell3241324123412342{
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+#mortalshell3241324123412342:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+#lisofp {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+#liesofp{
+    transition: .5s;
+    cursor: pointer;
+}
+
+#liesofp:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+g {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 30px;
+    position: absolute;
+}
+
+d {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 30px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.horizontalline {
+    display: flex;
+    margin-top: 150px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 1550px;
+justify-content: center;
+align-items: center;
+
+}
+
+
+p {
+    font-size: 25px;
+    color: #949494;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+
+}
+
+footer {
+    display: flex;
+
+}
+
+v {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #949494;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 1300px;
+    margin-top: 40px;
+}
