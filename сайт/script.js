@@ -220,6 +220,8 @@ loginForm.addEventListener('submit', function() {
     if(localStorage.getItem(loginUsername) === loginPassword) {
         alert('Авторизация успешна!');
         modalentrance.style.display ="none";
+        body.style.overflowY = "scroll";
+
     } else {
         alert('Неверное имя пользователя или пароль.');
     }
