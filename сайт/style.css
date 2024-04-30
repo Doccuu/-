@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+   
 }
 
 
@@ -13,19 +18,33 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: #141111;
-
+    
+   
 }
+
+body::-webkit-scrollbar {
+    width: 0px; 
+    height: 0px;
+  }
+
+
 
 .main {
+    
     background:
         linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
-        url("Постеры/HELLDIVERS 2 full hd.png");
+        url("Постеры/Big poster/HELLDIVERS 2 full hd.png");
     background-size: cover;
     box-shadow: inset 0 -200px 60px 20px rgba(0, 0, 0, 0.575);
+   
+
+
 }
 
-header {
 
+
+header {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -136,7 +155,7 @@ b {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 15px;
+    margin: 10px;
 
 }
 
@@ -161,7 +180,7 @@ b {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-left: 15px;
 }
 
@@ -175,6 +194,40 @@ a {
 
 }
 
+
+.slidercard{
+   
+    width: 770px;
+    height: 388px;
+    overflow: hidden;
+
+ 
+
+  
+}
+
+.slider-line{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+
+.slidercardflex{
+    display: flex;
+    transition: all ease 1s;
+    
+}
+
+
+
+
+
 .promo {
     display: flex;
     gap: 100px;
@@ -186,7 +239,7 @@ a {
     gap: 50px;
 }
 
-a {
+p {
     font-size: 40px;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -209,10 +262,11 @@ a {
 }
 
 
-.buy:hover{
+.buy:hover {
     background-color: #ffffff;
     transition: .5s;
 }
+
 .buttoncategory {
     margin-top: 100px;
     display: flex;
@@ -378,14 +432,15 @@ c {
 #eldn {
     border: 2px solid #ffffff;
     border-radius: 20px;
- 
+
 }
 
-#eldenring{
+#eldenring {
     transition: .5s;
     cursor: pointer;
 }
-#eldenring:hover{
+
+#eldenring:hover {
     transform: scale(1.05);
     transition: .5s;
 }
@@ -396,27 +451,28 @@ c {
     border-radius: 20px;
 }
 
-#mortalshell{
+#mortalshell {
     transition: .5s;
     cursor: pointer;
 }
 
-#mortalshell:hover{
+#mortalshell:hover {
     transform: scale(1.05);
     transition: .5s;
 }
+
 #mortalshell324132412 {
     border: 2px solid #ffffff;
     border-radius: 20px;
 }
 
-#mortalshell3241324123412342{
+#mortalshell3241324123412342 {
     transition: .5s;
     cursor: pointer;
 
 }
 
-#mortalshell3241324123412342:hover{
+#mortalshell3241324123412342:hover {
     transform: scale(1.05);
     transition: .5s;
 }
@@ -426,12 +482,12 @@ c {
     border-radius: 20px;
 }
 
-#liesofp{
+#liesofp {
     transition: .5s;
     cursor: pointer;
 }
 
-#liesofp:hover{
+#liesofp:hover {
     transform: scale(1.05);
     transition: .5s;
 }
@@ -458,7 +514,7 @@ d {
 }
 
 
-.line{
+.line {
     display: flex;
     justify-content: center;
 }
@@ -468,19 +524,20 @@ d {
     margin-top: 150px;
     border: 1px solid rgb(255, 255, 255);
     width: 1550px;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-p {
+a {
     font-size: 25px;
     color: #949494;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
 }
 
 .link {
@@ -506,4 +563,275 @@ v {
     font-style: normal;
     margin-right: 1300px;
     margin-top: 40px;
+}
+
+
+
+.modalentrance {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 350px;
+    float: right;
+    gap: 60px;
+    border-radius: 10px;
+
+
+}
+
+.knopki {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 40px;
+
+
+}
+
+.entrance {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.registration {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+
+.modalinput {
+
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: none;
+    gap: 60px;
+
+
+
+}
+
+.modallogin {
+    background: none;
+    outline: 0;
+    color: #ffffff;
+    border: none;
+    border-bottom: solid 1px;
+    padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+.modallogin::placeholder {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.modalpassword {
+    background: none;
+    outline: 0;
+    color: #ffffff;
+    border: none;
+    border-bottom: solid 1px;
+    padding: 5px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.modalpassword::placeholder {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.authorization {
+    background-color: #F8B802;
+    border-radius: 15px;
+    width: 230px;
+    height: 60px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 70px;
+    
+}
+
+
+
+
+
+.modalregistration {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.soglasie {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+  }
+  
+  .soglasie input {
+    width: 0;
+    height: 0;
+  }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc00;
+    -webkit-transition: .4s;
+    border: solid #fff 1px;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 5px;
+    bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider::before {
+    background-color: #F8B802;
+  }
+  
+ 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(33px);
+    -ms-transform: translateX(33px);
+    transform: translateX(33px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+x{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    color: #fff;
+    width: 160px;
+    
+  }
+
+  .soglashenie{
+    display: flex;
+    gap: 20px;
+  }
+
+  .arrow{
+   border: none;
+   background-color: #00000000;
+   cursor: pointer;
+  }
+
+  #newcards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #leaderscards{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #pre-ordercards{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #soulslikecards{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  #registerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+
+  #loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px rgb(255, 255, 255); 
+    -webkit-text-fill-color: rgb(0, 0, 0); 
+    
 }

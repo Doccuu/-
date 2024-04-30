@@ -9,10 +9,11 @@
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body id="body">
     <!-- главная страничка -->
-    <article class="main">
-        <article class="imgmain"></article>
+    <section class="main" id="main">
+
+
         <!-- хедер -->
         <header>
             <img src="logo.png" alt="logo" class="logo">
@@ -20,21 +21,25 @@
                 <button class="head katalog">КАТАЛОГ ИГР</button>
                 <input type="text, submit" class="search">
             </nav>
-            <button class="head entry">ВОЙТИ</button>
+            <button id="open" class="head entry">ВОЙТИ</button>
         </header>
         <!-- конец хедера -->
+
+
 
         <article class="downmain">
 
             <!-- переключение  заданика на гл экране -->
             <article class="promo">
                 <article class="switch">
-                    <img src="svg/up arrow.svg" alt="up arrow">
+                    <button class="arrow" id="backgroundup" onClick="changeText();"><img src="svg/up arrow.svg"
+                            alt="up arrow"></button>
                     <article class="verticalline"></article>
-                    <img src="svg/down arrow.svg" alt="down arrow">
+                    <button class="arrow" id="backgrounddown" onClick="changeText2();"> <img src="svg/down arrow.svg"
+                            alt="down arrow"></button>
                 </article>
                 <article class="name">
-                    <a>HELLDIVERS 2</a>
+                    <p class="text">HELLDIVERS 2</p>
                     <button class="buy">КУПИТЬ</button>
                 </article>
             </article>
@@ -43,140 +48,428 @@
             <!-- карточки на главном экране -->
             <article class="threcard">
 
-                <article class="smallcard">
-                    <img src="Постеры/helldivers 2 mini.png" alt="helldivers 2 mini" class="imgcard">
-                    <b>HELLDIVERS 2</b>
-                    <b>4599 ₽</b>
-                </article>
-                <article class="smallcard">
-                    <img src="Постеры/helldivers 2 mini.png" alt="helldivers 2 mini" class="imgcard">
-                    <b>HELLDIVERS 2</b>
-                    <b>4599 ₽</b>
-                </article>
-                <article class="smallcard">
-                    <img src="Постеры/helldivers 2 mini.png" alt="helldivers 2 mini" class="imgcard">
-                    <b>HELLDIVERS 2</b>
-                    <b>4599 ₽</b>
+
+
+
+
+                <article class="slidercard" id="slidercard">
+                    <article class="slider-line" id="slider-line">
+                        <article class="slidercardflex" id="slidercard1">
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/darksouls1 mini.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>DARK SOULS</b>
+                                <b>1099 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/darksouls2 mini.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>DARK SOULS 2</b>
+                                <b>1299 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/darksouls3 mini.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>DARK SOULS 3</b>
+                                <b>1699 ₽</b>
+                            </article>
+                        </article>
+
+                        <article class="slidercardflex" id="slidercard2">
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/elden ring.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>ELDEN RING</b>
+                                <b>3599 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/hollow knight.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>HOLLOW KNIGHT</b>
+                                <b>599 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/Sekiro.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>SEKIRO SHADOWS DIE TWICE</b>
+                                <b>3599 ₽</b>
+                            </article>
+                        </article>
+
+                        <article class="slidercardflex" id="slidercard2">
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/helldivers 2 mini.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>HELLDIVERS 2</b>
+                                <b>4599 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/cuphead.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>CUPHEAD</b>
+                                <b>699 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/mortal shell.png" alt="helldivers 2 mini"
+                                    class="imgcard">
+                                <b>MORTAL SHELL 2</b>
+                                <b>399 ₽</b>
+                            </article>
+                        </article>
+
+                        <article class="slidercardflex" id="slidercard2">
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/dead cells.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>DEAD CELLS</b>
+                                <b>499 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/lies of p.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>LIES OF P</b>
+                                <b>3999 ₽</b>
+                            </article>
+                            <article class="smallcard">
+                                <img src="Постеры/small poster/remnant2.png" alt="helldivers 2 mini" class="imgcard">
+                                <b>REMNANT II</b>
+                                <b>1999 ₽</b>
+                            </article>
+                        </article>
+
+                    </article>
+
+
                 </article>
                 <article class="switch">
-                    <img src="svg/up arrow.svg" alt="up arrow">
+                    <button class="arrow" id="cardarrowup"> <img src="svg/up arrow.svg" alt="up arrow"></button>
                     <article class="verticalline"></article>
-                    <img src="svg/down arrow.svg" alt="down arrow">
+                    <button class="arrow" id="cardarrowdown"> <img src="svg/down arrow.svg" alt="down arrow"></button>
                 </article>
             </article>
             <!-- конец карточек на главном экране -->
         </article>
 
-    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="modalentrance" class="modalentrance">
+            <article class="modal-content">
+    
+                <article class="knopki">
+                    <button class="entrance" id="entrance">Вход</button>
+                    <button class="registration" id="registration">Регистрация</button>
+                </article>
+    
+                <form id="loginForm">
+                    <article class="modalinput">
+                        <input name="email" placeholder="E-MAIL" id="modallogin" class="modallogin">
+                        <input name="password" type="password" placeholder="Пароль" id="modalpassword" class="modalpassword">
+                    </article>
+                    <input type="submit" value="Авторизироваться" class="authorization">
+                </form>
+            </article>
+        </section>
+    
+    
+    
+        <section id="modalregistration" class="modalregistration">
+            <article class="modal-content">
+                <article class="knopki">
+                <button class="entrance" id="entrance2">Вход</button>
+                <button class="registration" id="registration2">Регистрация</button>
+            </article>
+                <form id="registerForm">
+                    <article class="modalinput">
+                        <input name="email" placeholder="E-MAIL" id="registermodallogin" class="modallogin">
+                        <input name="password" type="password" placeholder="Пароль" id="registermodalpassword" class="modalpassword">
+    
+    
+                        <article class="soglashenie">
+                        <label class="soglasie">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <x>Я даю согласие на обработку моих персональных данных</x>
+                    </article>
+                    </article>
+                    <input type="submit" value="Зарегистрироваться" class="authorization">
+                </form>
+                
+            </article>
+        </section>
+
+
+
+        
+    </section>
     <!-- конец гл странички -->
 
     <!-- начало категорий -->
-    <article class="category">
+    <section class="category">
         <article class="buttoncategory">
             <button id="new">НОВИНКИ</button>
             <button id="liders">ЛИДЕРЫ ПРОДАЖ</button>
             <button id="pre-order">ПРЕДЗАКАЗЫ</button>
             <button id="soulslike">SoulsLike</button>
         </article>
-        <article class="categorycardup">
-            <article class="bigcard" id="cardhelldivers">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+        <article id="newcards">
+            <article class="categorycardup">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/Buckshot.png" alt="BUCKSHOT ROULETTE" class="imgcard">
+                    <b>Buckshot roulette</b>
+                    <b>99 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/alone in the dark.png" alt="alone in the dark"
+                        class="imgcard">
+                    <b>Alone in the dark</b>
+                    <b>2449 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/Bloodlines 2.png" alt="Bloodlines 2" class="imgcard">
+                    <b>Bloodlines 2</b>
+                    <b>1999 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/dead island2.png" alt="dead island2" class="imgcard">
+                    <b>Dead island2</b>
+                    <b>2299 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/dogma2.png" alt="" class="imgcard">
+                    <b>Dragon's Dogma 2</b>
+                    <b>6499 ₽</b>
+                </article>
+
             </article>
-            <article class="bigcard" id="card2">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+            <article class="categorycarddawn">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/frostpunk 2.png" alt="frostpunk 2" class="imgcard">
+                    <b>Frostpunk 2</b>
+                    <b>1899 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/hades 2.png" alt="hades 2" class="imgcard">
+                    <b>Hades II</b>
+                    <b>699 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/litle nightmares 3.png" alt="litle nightmares 3"
+                        class="imgcard">
+                    <b>Litle nightmares 3</b>
+                    <b>1299 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/Suicide Squad.png" alt="Suicide Squad" class="imgcard">
+                    <b>Suicide Squad</b>
+                    <b>5 799 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/new/Warhammer 40,000 Space Marine 2.png" alt="Space Marine"
+                        class="imgcard">
+                    <b>Warhammer 40,000 Space Marine 2</b>
+                    <b>2999 ₽</b>
+                </article>
             </article>
-            <article class="bigcard" id="card3">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+        </article>
+
+        <article id="leaderscards">
+            <article class="categorycardup">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/bellwright.png" alt="bellwright" class="imgcard">
+                    <b>Bellwright</b>
+                    <b>1299₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/dayz.png" alt="dayz" class="imgcard">
+                    <b>Dayz</b>
+                    <b>1699₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/frostpunk.png" alt="frostpunk" class="imgcard">
+                    <b>Frostpunk</b>
+                    <b>799 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/Manor lords.png" alt="Manor lords" class="imgcard">
+                    <b>Manor lords</b>
+                    <b>1399₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/outlast2.png" alt="outlast 2" class="imgcard">
+                    <b>Outlast 2</b>
+                    <b>239 ₽</b>
+                </article>
+
             </article>
-            <article class="bigcard" id="card4">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+            <article class="categorycarddawn">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/phasmophobia.png" alt="phasmophobia" class="imgcard">
+                    <b>Phasmophobia</b>
+                    <b>439₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/rimworld.png" alt="rimworld" class="imgcard">
+                    <b>Rimworld</b>
+                    <b>1099 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/stradew valley.png" alt="stradew valley" class="imgcard">
+                    <b>Stradew valley</b>
+                    <b>439 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/Supermarket Simulator.png" alt="Supermarket Simulator"
+                        class="imgcard">
+                    <b>Supermarket Simulator</b>
+                    <b>229 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/leaders/valheim.png" alt="valheim" class="imgcard">
+                    <b>Valheim</b>
+                    <b>669 ₽</b>
+                </article>
             </article>
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+        </article>
+
+        <article id="pre-ordercards">
+            <article class="categorycardup">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/preorder/Crown Wars The Black Prince.png"
+                        alt="Crown Wars The Black Prince" class="imgcard">
+                    <b>Crown Wars The Black Prince</b>
+                    <b>2099 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/preorder/Destiny 2 The Final Shape.png"
+                        alt="Destiny 2 The Final Shape" class="imgcard">
+                    <b>Destiny 2 The Final Shape</b>
+                    <b>2399 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/preorder/ELDEN RING Shadow of the Erdtree.png"
+                        alt="ELDEN RING Shadow of the Erdtree" class="imgcard">
+                    <b>ELDEN RING Shadow of the Erdtree</b>
+                    <b>3299 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/preorder/Ghost of Tsushima.png" alt="Ghost of Tsushima"
+                        class="imgcard">
+                    <b>Ghost of tsushima director's cut </b>
+                    <b>4799 ₽</b>
+                </article>
+
+
             </article>
 
         </article>
-        <article class="categorycarddawn">
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+
+        <article id="soulslikecards">
+            <article class="categorycardup">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/darksouls1.png" alt="darksouls1" class="imgcard">
+                    <b>Darksouls </b>
+                    <b>1099 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/darksouls2.png" alt="darksouls2" class="imgcard">
+                    <b>Darksouls II</b>
+                    <b>1288 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/darksouls3.png " alt="darksouls3" class="imgcard">
+                    <b>Darksouls III</b>
+                    <b>1699 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/elden ring.png" alt="elden ring" class="imgcard">
+                    <b>Elden ring</b>
+                    <b>3599 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/hollow knight.png" alt="hollow knight" class="imgcard">
+                    <b>Hollow knight</b>
+                    <b>599 ₽</b>
+                </article>
+
             </article>
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
-            </article>
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
-            </article>
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
-            </article>
-            <article class="bigcard" id="card5">
-                <img src="Постеры/darksouls1 mini.png" alt="darksouls1" class="imgcard">
-                <b>Dark souls 1</b>
-                <b>1099 ₽</b>
+            <article class="categorycarddawn">
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/lies of p.png" alt="lies of p" class="imgcard">
+                    <b>Lies of p</b>
+                    <b>3999 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/mortal shell.png" alt="mortal shell" class="imgcard">
+                    <b>Mortal shell</b>
+                    <b>399 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/remnant2.png" alt="remnant2" class="imgcard">
+                    <b>Remnant II</b>
+                    <b>1999 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/Sekiro.png" alt="Sekiro" class="imgcard">
+                    <b>Sekiro shadow die twice</b>
+                    <b>3599 ₽</b>
+                </article>
+                <article class="bigcard">
+                    <img src="Постеры/bigsmall poster/soulslike/Cuphead.png" alt="Cuphead" class="imgcard">
+                    <b>Cuphead</b>
+                    <b>699 ₽</b>
+                </article>
             </article>
         </article>
-    </article>
+    </section>
     <!-- конец категорий -->
     <!-- наш выбор -->
     <article class="choise">
         <c>НАШ ВЫБОР</c>
     </article>
 
-    <article class="ourchoise">
+    <section class="ourchoise">
         <article class="ourchoiseleft">
 
             <article id="eldenring">
                 <g>ELDEN RING</g>
                 <d>3499 ₽</d>
-                <img src="Постеры/elden ring.png" alt="elden ring" id="eldn">
+                <img src="Постеры/medium poster/elden ring.png" alt="elden ring" id="eldn">
             </article>
             <article id="mortalshell">
                 <g>MORTAL SHELL</g>
                 <d>399 ₽</d>
-                <img src="Постеры/Mortal shell.png" alt="mortalshell" id="mortlshell">
+                <img src="Постеры/medium poster/Mortal shell.png" alt="mortalshell" id="mortlshell">
             </article>
         </article>
         <article class="ourchoiseright">
             <article id="mortalshell3241324123412342">
-                <g>ELDEN RING</g>
-                <d>3499 ₽</d>
-                <img src="Постеры/Mortal shell.png" alt="mortalshell" id="mortalshell324132412">
+                <g>DARK SOULS III</g>
+                <d>1699 ₽</d>
+                <img src="Постеры/medium poster/dark souls3.png" alt="mortalshell" id="mortalshell324132412">
             </article>
             <article id="liesofp">
                 <g>LIES OF P</g>
                 <d>3999 ₽</d>
-                <img src="Постеры/Lies of p.png" alt="liesofp" id="lisofp">
+                <img src="Постеры/medium poster/Lies of p.png" alt="liesofp" id="lisofp">
             </article>
         </article>
-    </article>
+    </section>
     <article class="line">
         <article class="horizontalline"></article>
     </article>
     <article class="footer">
         <article class="link">
-            <p href="#">Соглашение</p>
-            <p href="#">Конфиденциальность</p>
-            <p href="#">Возвраты</p>
+            <a href="https://support.google.com/google-ads/answer/12675082?hl=ru">Соглашение</a>
+            <a href="https://policies.google.com/terms?hl=ru">Конфиденциальность</a>
+            <a href="https://support.google.com/googleplay/answer/2479637?hl=ru">Возвраты</a>
         </article>
-        <v>© 2024 BabadzakiStore</v>
+        <v> <a href="main.html">© 2024 BabadzakiStore </a> </v>
     </article>
     <script src="script.js"></script>
 </body>
