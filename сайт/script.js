@@ -201,9 +201,6 @@ let registerForm = document.getElementById('registerForm');
 
 
 
-
-
-
 registerForm.addEventListener('submit', function() {
     event.preventDefault();
     let username = document.getElementById('registermodallogin').value;
