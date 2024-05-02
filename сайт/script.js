@@ -198,11 +198,7 @@ buttonsoulslike.addEventListener("click", function(){
 let loginForm = document.getElementById('loginForm');
 let registerForm = document.getElementById('registerForm');
 
-
-
-
 registerForm.addEventListener('submit', function() {
-    event.preventDefault();
     let username = document.getElementById('registermodallogin').value;
     let password = document.getElementById('registermodalpassword').value;
     localStorage.setItem(username, password);
@@ -211,7 +207,6 @@ registerForm.addEventListener('submit', function() {
 });
 
 loginForm.addEventListener('submit', function() {
-    event.preventDefault();
     let loginUsername = document.getElementById('modallogin').value;
     let loginPassword = document.getElementById('modalpassword').value;
     if(localStorage.getItem(loginUsername) === loginPassword) {
